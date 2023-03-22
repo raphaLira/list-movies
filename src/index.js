@@ -1,11 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import "./global.css";
 import DashBoard from "./pages/dashboard";
-
-import { MenuLateral } from "./components/menu-lateral/MenuLateral";
+import { MenuLateral } from "./components/menu-lateral/";
 import ListMovies from "./pages/list-movies";
 
 ReactDOM.render(

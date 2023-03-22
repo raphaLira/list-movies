@@ -1,6 +1,6 @@
-import { Divider, Drawer, Icon, List, ListItemButton, ListItemIcon, ListItemText, useTheme } from "@mui/material"
+import { Drawer, Icon, List, ListItemButton, ListItemIcon, ListItemText, useTheme } from "@mui/material"
 import { Box } from "@mui/system"
-import InboxIcon from '@mui/icons-material/Inbox';
+import React from "react";
 import { Link } from "react-router-dom";
 export const MenuLateral: React.FC = ({ children }) => {
     const theme = useTheme();

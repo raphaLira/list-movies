@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useState, useRef } from "react";
 import { getMovies } from "../../services/movieService";
-import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import TablePagination from "@mui/material/TablePagination";
 import TableContainer from "@mui/material/TableContainer";
@@ -17,8 +16,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@material-ui/core/TextField";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
-import { Table } from "../../global-js";
-import { Box } from "@mui/system";
+import { Table, Item } from "../../global-js";
 
 
 export default function ListMovies() {
@@ -90,18 +88,11 @@ export default function ListMovies() {
       .then((res) => setMovies(res.data.content));
   };
 
-  const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-  }));
 
   return (
-    <Box>
+    <Item>
+      <h1>List movies</h1>
       <TableContainer component={Paper} variant="outlined">
-        <h1>List movies</h1>
         <Table>
           <TableHead>
             <TableRow>
@@ -187,6 +178,6 @@ export default function ListMovies() {
           <Item></Item>
         </Grid>
       </Grid>
-    </Box>
+    </Item>
   );
 }

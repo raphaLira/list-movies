@@ -35,3 +35,10 @@ export const Table = styled.table`
     margin: 4rem 0;
   }
   `;
+ 
+  export const Item = styled.div`
+  h1 {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  `
