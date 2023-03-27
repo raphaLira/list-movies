@@ -27,7 +27,7 @@ export default function ListProducers() {
     <Item>
       <h1>Producers with longest and shortest interval between wins</h1>
       <Item>
-        <spam>Maximum</spam>
+        <span>Maximum</span>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
@@ -51,7 +51,7 @@ export default function ListProducers() {
       </Item>
       <Divider />
       <Item>
-        <spam>Minimum</spam>
+        <span>Minimum</span>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>

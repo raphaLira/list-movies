@@ -30,8 +30,8 @@ export default function TopStudios() {
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell align="right">Year</TableCell>
-              <TableCell align="right">Win count</TableCell>
+              <TableCell align="right">Name</TableCell>
+              <TableCell align="right">Win Count</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

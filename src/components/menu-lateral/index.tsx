@@ -1,4 +1,4 @@
-import { Drawer, Icon, List, ListItemButton, ListItemIcon, ListItemText, useTheme } from "@mui/material"
+import { Drawer, List, ListItemButton, ListItemText, useTheme } from "@mui/material"
 import { Box } from "@mui/system"
 import React from "react";
 import { Link } from "react-router-dom";
@@ -11,16 +11,10 @@ export const MenuLateral: React.FC = ({ children }) => {
                     <Box flex={1}>
                         <List component="nav">
                             <ListItemButton component={Link} to="/dashBoard">
-                                <ListItemIcon>
-                                    <Icon>home</Icon>
-                                </ListItemIcon>
-                                <ListItemText primary="DashBoard" />
+                                <ListItemText primary="Dashboard" />
                             </ListItemButton>
                             <ListItemButton component={Link} to="/movieList">
-                                <ListItemIcon>
-                                    <Icon>movie</Icon>
-                                </ListItemIcon>
-                                <ListItemText primary="List Movies" />
+                                <ListItemText primary="List" />
                             </ListItemButton>
                         </List>
                     </Box>

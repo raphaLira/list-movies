@@ -38,7 +38,14 @@ export const Table = styled.table`
  
   export const Item = styled.div`
   h1 {
-    text-align: center;
+    text-align: left;
     margin: 1rem 0;
+    font-weight: bold;
+  }
+
+  span {
+    margin-top: 1rem;
+    font-size:24px;
+    display:inline-block; 
   }
   `
