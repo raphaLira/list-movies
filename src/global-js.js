@@ -2,41 +2,41 @@ import styled from "styled-components";
 
 export const Table = styled.table`
   border-collapse: collapse;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    font-size: 10px;
-    font-weight: 400;
-    color: #333;
-    text-align: left;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 10px;
+  font-weight: 400;
+  color: #333;
+  text-align: left;
 
-    th,
-    td {
-      padding: 10px;
-      border: 1px solid #ccc;
-    }
+  th,
+  td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
 
-    th {
-      background-color: #f2f2f2;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
+  th {
+    background-color: #f2f2f2;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 
-    tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
 
-    tr:hover {
-      background-color: #ddd;
-    }
+  tr:hover {
+    background-color: #ddd;
+  }
 
-    h1 {
+  h1 {
     text-align: center;
     margin: 4rem 0;
   }
-  `;
- 
-  export const Item = styled.div`
+`;
+
+export const Item = styled.div`
   h1 {
     text-align: left;
     margin: 1rem 0;
@@ -45,7 +45,7 @@ export const Table = styled.table`
 
   span {
     margin-top: 1rem;
-    font-size:24px;
-    display:inline-block; 
+    font-size: 24px;
+    display: inline-block;
   }
-  `
+`;

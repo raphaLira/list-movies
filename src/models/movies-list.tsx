@@ -1,8 +1,8 @@
 export type Movies = {
-   id : number
-   year: number
-   title: string 
-   winner: boolean //Falta studios e producers
+    id: number
+    year: number
+    title: string
+    winner: boolean
 }
 export type MoviesResponse = {
     movies: Movies[]
@@ -12,5 +12,4 @@ export type MoviesResponse = {
     size: number
     first: boolean
     empty: boolean
-    // Falta o pageable e o sort
 }

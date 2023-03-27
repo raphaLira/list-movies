@@ -17,9 +17,9 @@ export default function ListYearsWith() {
   const [listYears, setYearsWinners] = useState([]);
 
   React.useEffect(() => {
-    getMovies.getListYearsMultipleWinners().then((res) =>
-      setYearsWinners(res.data.years)
-    );
+    getMovies
+      .getListYearsMultipleWinners()
+      .then((res) => setYearsWinners(res.data.years));
   }, []);
 
   return (

@@ -18,7 +18,6 @@ import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import { Table, Item } from "../../global-js";
 
-
 export default function ListMovies() {
   const [movies, setMovies] = useState([]);
 
@@ -87,7 +86,6 @@ export default function ListMovies() {
       .getListMovies(year.current.value, event.target.value)
       .then((res) => setMovies(res.data.content));
   };
-
 
   return (
     <Item>
