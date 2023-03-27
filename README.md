@@ -25,5 +25,5 @@ yarn install
 yarn start
 
 Acessar em
-[http://localhost:3000](http://localhost:3000) tvia browser.
+[http://localhost:3000](http://localhost:3000) via browser.
 
