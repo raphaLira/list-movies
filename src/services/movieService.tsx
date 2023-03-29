@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const getListMovies = (year?: number, winner?: boolean) => {
+const getListMovies = (year, winner) => {
     const params = {
         page: 0,
         size: 206,
@@ -20,11 +20,10 @@ const getListTopStudios = () => {
 
 const getMaxMinIntervalWins = async () => {
     const response = axios.get(`https://tools.texoit.com/backend-java/api/movies?projection=max-min-win-interval-for-producers`)
-    return (await response).data
+    return (await response)
 }
 
-const getMovieWinner = (year: number) => {
-    console.info('getMovieWinner**', year)
+const getMovieWinner = (year) => {
     return axios.get(`https://tools.texoit.com/backend-java/api/movies?winner=true&year=` + year)
 };
 

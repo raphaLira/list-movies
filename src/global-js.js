@@ -41,11 +41,12 @@ export const Item = styled.div`
     text-align: left;
     margin: 1rem 0;
     font-weight: bold;
+    font-size: 1.3rem;
   }
 
   span {
     margin-top: 1rem;
-    font-size: 24px;
+    font-size: 1.4rem;
     display: inline-block;
   }
 `;

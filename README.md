@@ -20,6 +20,12 @@ $ npm i yarn -g
 yarn install
 ```
 
+## Para executar os testes
+
+```
+yarn test
+```
+
 ## Para executar 
 
 yarn start

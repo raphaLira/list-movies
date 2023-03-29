@@ -30,15 +30,15 @@ export default function TopStudios() {
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell align="right">Name</TableCell>
-              <TableCell align="right">Win Count</TableCell>
+              <TableCell align="left">Name</TableCell>
+              <TableCell align="left">Win Count</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {orderedStudios.slice(0, 3).map((row) => (
               <TableRow>
-                <TableCell align="right">{row.name}</TableCell>
-                <TableCell align="right">{row.winCount} </TableCell>
+                <TableCell align="left">{row.name}</TableCell>
+                <TableCell align="left">{row.winCount} </TableCell>
               </TableRow>
             ))}
           </TableBody>

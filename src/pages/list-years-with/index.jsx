@@ -29,15 +29,15 @@ export default function ListYearsWith() {
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell align="right">Year</TableCell>
-              <TableCell align="right">Win count</TableCell>
+              <TableCell align="left">Year</TableCell>
+              <TableCell align="left">Win count</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {listYears.map((row) => (
               <TableRow>
-                <TableCell align="right">{row.year}</TableCell>
-                <TableCell align="right">{row.winnerCount} </TableCell>
+                <TableCell align="left">{row.year}</TableCell>
+                <TableCell align="left">{row.winnerCount} </TableCell>
               </TableRow>
             ))}
           </TableBody>
